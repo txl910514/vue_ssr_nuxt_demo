@@ -1,4 +1,4 @@
-
+const apiConfig = require('./config/api.config')
 module.exports = {
   mode: 'universal',
   /*
@@ -41,6 +41,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['@nuxtjs/axios', { baseURL: apiConfig.baseUrl }]
   ],
   /*
   ** Build configuration
