@@ -13,7 +13,7 @@ export const getters = {
 export const mutations = {
 
   // 设置是否移动端状态
-  updateMobileLayoutState(state, action) {
+  updateAdminInfo(state, action) {
     state.isMobile = action
   }
 }
