@@ -41,8 +41,26 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['@nuxtjs/axios', { baseURL: apiConfig.baseUrl }]
+    ['@nuxtjs/axios',  "@nuxtjs/proxy"]
   ],
+  axios: {
+    retry: { retries: 3 },
+    //开发模式下开启debug
+    debug: process.env._ENV == "production" ? false : true,
+    //设置不同环境的请求地址
+    baseURL:
+      process.env._ENV == "production"
+        ? "http://localhost:3000/api"
+        : "http://localhost:3000/api",
+    withCredentials: true,
+  },
+  proxy: {
+    //开启代理
+    "/api/": {
+      target: "http://192.168.1.2:10086/v1",
+      pathRewrite: { "^/api/": "" }
+    }
+  },
   /*
   ** Build configuration
   */
