@@ -25,3 +25,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 * https://github.com/github1586/nuxt-bnhcp
 * https://github.com/surmon-china/surmon.me
 * https://segmentfault.com/a/1190000012280812
+* https://www.jianshu.com/p/003d9add4fd1 跨域已试验

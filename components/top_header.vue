@@ -51,6 +51,17 @@ export default {
                 },
                 link: "http://www.qtk.com/"
             }
+    },
+    created () {
+        console.log('created');
+        this.loadmoreArticle();
+
+    },
+    methods: {
+      loadmoreArticle() {
+        // this.$store.dispatch('tag/fetchList');
+        // this.$store.dispatch('tag/nextList');
+      }
     }
 }
 </script>

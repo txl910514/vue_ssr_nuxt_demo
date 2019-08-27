@@ -15,3 +15,9 @@ export default {
     },
 }
 </script>
+
+<style lang="less">
+    html, body {
+        font: 14px "Microsoft YaHei", Arial, Helvetica, Sans-Serif;
+    }
+</style>
